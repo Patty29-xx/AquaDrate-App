@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AquaDrate</string>
+    <string name="aquadrate">AquaDrate</string>
+    <string name="welcome_message">Welcome to your new\nhydration journey!</string>
+    <string name="profile_set_up_text">Profile Set Up</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="select_gender_text">Select Gender</string>
+    <string name="start">START</string>
+    <string name="next">next</string>
+    <string name="kg_unit">KG</string>
+    <string name="female_icon">Female Icon</string>
+    <string name="enter_your_weight">Enter Your Weight</string>
+    <string name="water_intake_history_text">Water Intake History</string>
+</resources>

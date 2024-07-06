@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ad">
+
+    <!-- Existing UI elements -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/tvWaterRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvRemainingWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWaterRatio"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/reg_poppins"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+        <!--Undo-->
+    <Button
+        android:id="@+id/btnUndo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_above="@id/bottom_button_container"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="335dp"
+        android:background="@drawable/undo_btn"
+        android:contentDescription="Undo action"
+        android:textStyle="bold" />
+
+    <!-- Circular Progress Bar -->
+
+    <ProgressBar
+        android:id="@+id/progressWater"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="236dp"
+        android:layout_height="240dp"
+        android:layout_below="@id/tvRemainingWater"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="86dp"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/circular_progress_bar" />
+
+    <EditText
+        android:id="@+id/etDrinkAmount"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_button_container"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#E6E6E4"
+        android:gravity="center"
+        android:hint="Custom Drink (ml)"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/progressWater"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/reg_poppins"
+        android:gravity="center"
+        android:text="Tap here to record your drink today!"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnAddDrink"
+        android:layout_width="108dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/bottom_button_container"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/add_drink"
+        android:fontFamily="@font/reg_poppins"
+        android:text="Add Drink"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!-- Horizontal layout for preset buttons -->
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_above="@+id/etDrinkAmount"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPreset250ml"
+                android:contentDescription="Preset Button"
+                android:layout_width="70dp"
+                android:layout_height="59dp"
+                android:background="@drawable/first_preset_btn"
+                android:fontFamily="@font/bold_poppins" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="How much water"
+                android:layout_marginTop="8dp"
+                android:text="250 ml"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPreset350ml"
+                android:layout_width="70dp"
+                android:layout_height="59dp"
+                android:background="@drawable/second_preset_btn"
+                android:contentDescription="Preset Button"
+                android:fontFamily="@font/bold_poppins"
+                android:textColor="#DA6220" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:contentDescription="How much water"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="350 ml"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPreset500ml"
+                android:contentDescription="Preset Button"
+                android:layout_width="70dp"
+                android:layout_height="59dp"
+                android:background="@drawable/third_preset_btn"
+                android:fontFamily="@font/bold_poppins"
+                android:textColor="#DA6220" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:contentDescription="How much water"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="500 ml"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <!-- Navigation Buttons   -->
+
+    <FrameLayout
+        android:id="@+id/bottom_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/orange">
+
+        <LinearLayout
+            android:layout_width="399dp"
+            android:layout_height="83dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:padding="8dp">
+
+            <!-- Home button and text -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/dropbtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/drop_icon"
+                    android:contentDescription="return to home" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/reg_poppins"
+                    android:text="Today"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- History button and text -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnViewHistory"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/history_btn"
+                    android:contentDescription="return to history" />
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/reg_poppins"
+                    android:text="History"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "760061449084",
+    "project_id": "waterreminderdatabase",
+    "storage_bucket": "waterreminderdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760061449084:android:a8abdfbea6d7d63add0af9",
+        "android_client_info": {
+          "package_name": "com.example.waterreminder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHIgqX0Ts746-P6MVBokyw5N5RMgh3hSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

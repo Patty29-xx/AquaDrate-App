@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:background="@drawable/bg_ad"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/reg_poppins"
+        android:padding="16dp"
+        android:text="Congratulations! You've reached your daily water intake goal."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="247dp"
+        android:layout_height="197dp"
+        android:contentDescription="Congratulations Image"
+        android:src="@drawable/allset_ad" />
+
+</LinearLayout>
