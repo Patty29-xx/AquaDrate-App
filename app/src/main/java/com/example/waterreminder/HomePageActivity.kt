@@ -197,7 +197,7 @@ class HomePageActivity : AppCompatActivity() {
 
     private fun showExceededMessage() {
         val builder = AlertDialog.Builder(this)
-        builder.setMessage("You have exceeded your daily water intake goal!")
+        builder.setMessage("Hold on! Drinking more than your daily water goal can be counterproductive. Stay within limits to feel your best. ")
             .setPositiveButton("OK", null)
             .create()
             .show()
