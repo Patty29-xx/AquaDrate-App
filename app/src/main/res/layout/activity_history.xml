@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -28,18 +35,24 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@color/orange">
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.000">
 
         <LinearLayout
-            android:layout_width="399dp"
-            android:layout_height="83dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:baselineAligned="false"
-            android:padding="8dp">
+            android:padding="2dp">
 
             <!-- Home button and text -->
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
@@ -50,22 +63,13 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/drop_icon"
-                    android:contentDescription="return to home" />
+                    android:contentDescription="return to home"/>
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/reg_poppins"
-                    android:text="Today"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
             </LinearLayout>
 
             <!-- History button and text -->
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
@@ -77,17 +81,10 @@
                     android:layout_height="48dp"
                     android:background="@drawable/history_btn"
                     android:contentDescription="return to history" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/reg_poppins"
-                    android:text="History"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>
+
 </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
