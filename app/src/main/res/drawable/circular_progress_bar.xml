@@ -11,8 +11,8 @@
         android:thicknessRatio="8"
         android:useLevel="true" >
         <size
-            android:width="400dp"
-            android:height="400dp" />
+            android:width="430dp"
+            android:height="430dp" />
         <gradient
             android:type="sweep"
             android:useLevel="true"
